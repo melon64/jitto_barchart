@@ -1,0 +1,66 @@
+.bar-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  
+  .bar-chart svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .y-axis, .x-axis {
+    stroke: gray;
+  }
+  
+  .bar {
+    transition: fill 0.4s ease-in-out;
+  }
+
+  .bar:hover{
+    fill: #c9c9c9;
+  }
+  
+  .bar-label {
+    font-size: 20px;
+    text-anchor: middle;
+  }
+
+  .hover-label{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 20px;
+    text-anchor: middle;
+  }
+
+  @keyframes grow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 7%;
+    }
+  }
+  
+  .bar-initial {
+    animation: grow 0.5s ease-in-out; 
+    animation-fill-mode: forwards; 
+    width: 0; 
+  }
+  
+  .y-axis {
+    stroke-width: 2;
+  }
+  
+  .x-axis {
+    stroke-width: 2;
+  }
+  

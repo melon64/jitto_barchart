@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BarChart from './components/BarChart';
 
 function App() {
+
+  //dummy data
+  const data = [45, 85, 32, 90, 110, 33, 230];
+  const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July'];
+  const theme = { barColor: 'green', labelColor: 'black' };
+  const theme2 = { barColor: 'blue', labelColor: 'red' };
+  const theme3 = { barColor: 'black', labelColor: 'purple' };
+  const data1 = [6566, 100, 2333, 567, 10000];
+  const labels1 = ['Q1', 'Q2', 'Q3', 'Q4', 'Q1'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My Bar Chart Demo</h1>
+      <BarChart data={data} labels={labels} theme={theme}/> 
+      <BarChart data={data1} labels={labels1} theme={theme3}/>
+      <BarChart data={data} labels={labels} horizontal={true} theme={theme2}/>
+      <BarChart data={data1} labels={labels1} horizontal={true} theme={theme3}/>
     </div>
   );
 }
