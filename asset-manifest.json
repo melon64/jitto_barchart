@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jitto_barchart/static/css/main.fe6b4482.css",
+    "main.js": "/jitto_barchart/static/js/main.4541a031.js",
+    "index.html": "/jitto_barchart/index.html",
+    "main.fe6b4482.css.map": "/jitto_barchart/static/css/main.fe6b4482.css.map",
+    "main.4541a031.js.map": "/jitto_barchart/static/js/main.4541a031.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe6b4482.css",
+    "static/js/main.4541a031.js"
+  ]
+}
